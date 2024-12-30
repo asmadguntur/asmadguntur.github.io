@@ -1,0 +1,169 @@
+header,
+  main,
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    width:1000px;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+  }
+
+  main .content{
+    width: 1150px;
+  }
+
+  .content article #home,
+  #aboutme,
+  #myproject,
+  #getintouch
+  {
+    flex-wrap: wrap;
+    width: 1100;
+  }
+
+  /* HEADER */
+  header nav {
+    width: 1050px;
+    height: 70px;
+  }
+  nav ul {
+    width: 90%;
+    gap: 2rem;
+  }
+  nav li {
+    padding: 0;
+  }
+
+
+
+  /* HOME */
+  article#home {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+  width: 1000px;
+}
+#home .home-description {
+  width: 600px;
+  margin-top: 10px;
+}
+.home-description p{
+  font-size: 10px;
+}
+main .content #home .home-gambar img {
+  flex-shrink: 1;
+  width: 250px;
+  height: 300px;
+}
+
+
+/* ABOUT ME */
+main .content #aboutme{
+  width: 1100px;
+  padding: 10px;
+  justify-content: center;
+}
+#aboutme #personal-info,
+#skills,
+#experience{
+  width: 1050px;
+  margin: 5px;
+  justify-content: center;
+}
+
+.content-skills {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+  .progress-bar-html,
+  .progress-bar-css,
+  .progress-bar-js,
+  .progress-bar-uiux,
+  .progress-bar-bs,
+  .progress-bar-pm {
+    width: 75px;
+    height: 75px;
+}
+  .contact-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+  /* FOOTER */
+  footer {
+    align-items: center;
+    padding: 10px;
+  }
+
+
+
+@media screen and (max-width: 428px) {
+  header,
+  main,
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+  }
+
+  header nav {
+    height: 40px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    column-gap: 0.8rem;
+  }
+  nav li {
+    padding: 0;
+    margin: 5px;
+  }
+
+  /* HOME */
+  main .content #home {
+    flex-direction: column-reverse;
+    padding: 10px;
+    width: 390px;
+  }
+  main .content #home .home-description {
+    margin-top: 10px;
+    padding: 20px;
+  }
+  main .content #home .home-gambar img {
+    flex-shrink: 1;
+    width: 250px;
+    height: 300px;
+  }
+  .home button{
+    width: 100px;
+  }
+  .progress-bar-container{
+    margin: 20px;
+  }
+  main .content #aboutme{
+    width: 390px;
+  }
+  #personal-info table {
+    flex-wrap: wrap;
+  }
+   /* BUTTO TOP */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  right: 50px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 0px;
+}
